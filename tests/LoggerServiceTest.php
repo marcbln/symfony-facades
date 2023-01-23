@@ -1,10 +1,10 @@
 <?php
 
-namespace Lagdo\Symfony\Facades\Tests;
+namespace Marcbln\Symfony\Facades\Tests;
 
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
-use Lagdo\Symfony\Facades\Container;
-use Lagdo\Symfony\Facades\Log;
+use Marcbln\Symfony\Facades\Container;
+use Marcbln\Symfony\Facades\Log;
 use Psr\Log\LoggerInterface;
 
 use Error;
@@ -39,7 +39,7 @@ class LoggerServiceTest extends KernelTestCase
         // The logger service is private.
         $this->assertFalse($container->has('logger'));
         // The facades service locator is public.
-        $this->assertTrue($container->has('lagdo.facades.service_locator'));
+        $this->assertTrue($container->has('marcbln.facades.service_locator'));
         // The logger service is not defined.
         $this->assertFalse($container->has(LoggerInterface::class));
     }

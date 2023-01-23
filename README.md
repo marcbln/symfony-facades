@@ -1,11 +1,11 @@
-[![Build Status](https://api.travis-ci.com/lagdo/symfony-facades.svg?branch=main)](https://app.travis-ci.com/github/lagdo/symfony-facades)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/lagdo/symfony-facades/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/lagdo/symfony-facades/?branch=main)
+[![Build Status](https://api.travis-ci.com/marcbln/symfony-facades.svg?branch=main)](https://app.travis-ci.com/github/marcbln/symfony-facades)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/marcbln/symfony-facades/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/marcbln/symfony-facades/?branch=main)
 [![StyleCI](https://styleci.io/repos/418488513/shield?branch=main)](https://styleci.io/repos/418488513)
-[![Coverage Status](https://coveralls.io/repos/github/lagdo/symfony-facades/badge.svg?branch=main)](https://coveralls.io/github/lagdo/symfony-facades?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/marcbln/symfony-facades/badge.svg?branch=main)](https://coveralls.io/github/marcbln/symfony-facades?branch=main)
 
-[![Latest Stable Version](https://poser.pugx.org/lagdo/symfony-facades/v/stable)](https://packagist.org/packages/lagdo/symfony-facades)
-[![Total Downloads](https://poser.pugx.org/lagdo/symfony-facades/downloads)](https://packagist.org/packages/lagdo/symfony-facades)
-[![License](https://poser.pugx.org/lagdo/symfony-facades/license)](https://packagist.org/packages/lagdo/symfony-facades)
+[![Latest Stable Version](https://poser.pugx.org/marcbln/symfony-facades/v/stable)](https://packagist.org/packages/marcbln/symfony-facades)
+[![Total Downloads](https://poser.pugx.org/marcbln/symfony-facades/downloads)](https://packagist.org/packages/marcbln/symfony-facades)
+[![License](https://poser.pugx.org/marcbln/symfony-facades/license)](https://packagist.org/packages/marcbln/symfony-facades)
 
 Facades for Symfony services
 ============================
@@ -19,20 +19,20 @@ It will be especially interesting in the case when a class depends on many servi
 
 Install the package with  `composer`.
 ```bash
-composer require lagdo/symfony-facades
+composer require marcbln/symfony-facades
 ```
 
-If the project is not using Symfony Flex, then register the `Lagdo\Symfony\Facades\FacadesBundle` bundle in the `src/Kernel.php` file.
+If the project is not using Symfony Flex, then register the `Marcbln\Symfony\Facades\FacadesBundle` bundle in the `src/Kernel.php` file.
 
 ## Usage
 
-A facade inherits from the `Lagdo\Symfony\Facades\AbstractFacade` abstract class, and implements the `getServiceIdentifier()` method, which returns the id of the corresponding service.
+A facade inherits from the `Marcbln\Symfony\Facades\AbstractFacade` abstract class, and implements the `getServiceIdentifier()` method, which returns the id of the corresponding service.
 
 ```php
 namespace App\Facades;
 
 use App\Services\MyService;
-use Lagdo\Symfony\Facades\AbstractFacade;
+use Marcbln\Symfony\Facades\AbstractFacade;
 
 class MyFacade extends AbstractFacade
 {
@@ -90,7 +90,7 @@ See the [Symfony service locators documentation](https://symfony.com/doc/4.4/ser
 In the following example, the `Twig` service is passed to the service locator.
 
 ```yaml
-    lagdo.facades.service_locator:
+    marcbln.facades.service_locator:
         public: true
         class: Symfony\Component\DependencyInjection\ServiceLocator
         tags: ['container.service_locator']
@@ -105,7 +105,7 @@ A facade can then be defined for the `Twig` service.
 namespace App\Facades;
 
 use Twig\Environment;
-use Lagdo\Symfony\Facades\AbstractFacade;
+use Marcbln\Symfony\Facades\AbstractFacade;
 
 class View extends AbstractFacade
 {
@@ -144,7 +144,7 @@ This package provides facades for some Symfony services.
 The `logger` service must be passed to the service locator in the `config/services.yaml` file.
 
 ```yaml
-    lagdo.facades.service_locator:
+    marcbln.facades.service_locator:
         public: true
         class: Symfony\Component\DependencyInjection\ServiceLocator
         tags: ['container.service_locator']
@@ -156,7 +156,7 @@ The `logger` service must be passed to the service locator in the `config/servic
 Messages can now be logged using the facade.
 
 ```php
-use Lagdo\Symfony\Facades\Log;
+use Marcbln\Symfony\Facades\Log;
 
 Log::info($message, $vars);
 ```
@@ -166,7 +166,7 @@ Log::info($message, $vars);
 The `twig` service must be passed to the service locator in the `config/services.yaml` file.
 
 ```yaml
-    lagdo.facades.service_locator:
+    marcbln.facades.service_locator:
         public: true
         class: Symfony\Component\DependencyInjection\ServiceLocator
         tags: ['container.service_locator']
@@ -178,7 +178,7 @@ The `twig` service must be passed to the service locator in the `config/services
 Views can now be rendered using the facade.
 
 ```php
-use Lagdo\Symfony\Facades\View;
+use Marcbln\Symfony\Facades\View;
 
 $html = View::render($template, $vars);
 ```
@@ -186,8 +186,8 @@ $html = View::render($template, $vars);
 Contribute
 ----------
 
-- Issue Tracker: github.com/lagdo/symfony-facades/issues
-- Source Code: github.com/lagdo/symfony-facades
+- Issue Tracker: github.com/marcbln/symfony-facades/issues
+- Source Code: github.com/marcbln/symfony-facades
 
 License
 -------

@@ -1,6 +1,6 @@
 <?php
 
-namespace Lagdo\Symfony\Facades;
+namespace Marcbln\Symfony\Facades;
 
 use Psr\Log\LoggerInterface;
 

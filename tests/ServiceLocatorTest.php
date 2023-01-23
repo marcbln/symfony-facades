@@ -1,11 +1,11 @@
 <?php
 
-namespace Lagdo\Symfony\Facades\Tests;
+namespace Marcbln\Symfony\Facades\Tests;
 
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
-use Lagdo\Symfony\Facades\Container;
-use Lagdo\Symfony\Facades\Tests\Facades\PublicFacade;
-use Lagdo\Symfony\Facades\Tests\Facades\PrivateFacade;
+use Marcbln\Symfony\Facades\Container;
+use Marcbln\Symfony\Facades\Tests\Facades\PublicFacade;
+use Marcbln\Symfony\Facades\Tests\Facades\PrivateFacade;
 
 use Error;
 use Exception;
@@ -39,9 +39,9 @@ class ServiceLocatorTest extends KernelTestCase
         // The logger service is private.
         $this->assertFalse($container->has('logger'));
         // The facades service locator is public.
-        $this->assertTrue($container->has('lagdo.facades.service_locator'));
+        $this->assertTrue($container->has('marcbln.facades.service_locator'));
         // The custom service is not defined.
-        $this->assertFalse($container->has('lagdo.facades.test_service'));
+        $this->assertFalse($container->has('marcbln.facades.test_service'));
     }
 
     public function testPrivateFacade()

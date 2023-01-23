@@ -1,8 +1,8 @@
 <?php
 
-namespace Lagdo\Symfony\Facades\Tests\Facades;
+namespace Marcbln\Symfony\Facades\Tests\Facades;
 
-use Lagdo\Symfony\Facades\AbstractFacade;
+use Marcbln\Symfony\Facades\AbstractFacade;
 
 class PublicFacade extends AbstractFacade
 {

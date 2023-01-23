@@ -1,6 +1,6 @@
 <?php
 
-namespace Lagdo\Symfony\Facades\Tests\Kernels;
+namespace Marcbln\Symfony\Facades\Tests\Kernels;
 
 use Symfony\Component\Config\Loader\LoaderInterface;
 use Nyholm\BundleTest\AppKernel;

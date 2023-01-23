@@ -1,6 +1,6 @@
 <?php
 
-namespace Lagdo\Symfony\Facades;
+namespace Marcbln\Symfony\Facades;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\DependencyInjection\ServiceLocator;
@@ -60,6 +60,6 @@ final class Container
         self::$services = [];
         self::$container = $container;
         self::$locator = null;
-        self::$locator = self::getService('lagdo.facades.service_locator');
+        self::$locator = self::getService('marcbln.facades.service_locator');
     }
 }

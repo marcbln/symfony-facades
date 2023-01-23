@@ -1,8 +1,8 @@
 services:
-    lagdo.facades.service_locator:
+    marcbln.facades.service_locator:
         public: true
         class: Symfony\Component\DependencyInjection\ServiceLocator
         tags: ['container.service_locator']
         arguments:
             -
-                lagdo.facades.test_service: '@logger'
+                marcbln.facades.test_service: '@logger'

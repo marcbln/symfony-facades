@@ -1,6 +1,6 @@
 <?php
 
-namespace Lagdo\Symfony\Facades;
+namespace Marcbln\Symfony\Facades;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

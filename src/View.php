@@ -1,6 +1,6 @@
 <?php
 
-namespace Lagdo\Symfony\Facades;
+namespace Marcbln\Symfony\Facades;
 
 use Twig\Extension\ExtensionInterface;
 use Twig\Loader\LoaderInterface;
@@ -14,7 +14,7 @@ use Twig\TwigFilter;
 use Twig\TwigTest;
 use Twig\TwigFunction;
 use Twig\Environment;
-use Lagdo\Symfony\Facades\AbstractFacade;
+use Marcbln\Symfony\Facades\AbstractFacade;
 
 /**
  * @method static void enableDebug()

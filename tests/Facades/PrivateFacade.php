@@ -1,8 +1,8 @@
 <?php
 
-namespace Lagdo\Symfony\Facades\Tests\Facades;
+namespace Marcbln\Symfony\Facades\Tests\Facades;
 
-use Lagdo\Symfony\Facades\AbstractFacade;
+use Marcbln\Symfony\Facades\AbstractFacade;
 
 class PrivateFacade extends AbstractFacade
 {
@@ -11,6 +11,6 @@ class PrivateFacade extends AbstractFacade
      */
     protected static function getServiceIdentifier()
     {
-        return 'lagdo.facades.test_service';
+        return 'marcbln.facades.test_service';
     }
 }
