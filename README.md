@@ -1,3 +1,7 @@
+This is a fork from lagdo/symfony-facades with support for symfony 6.
+
+
+
 [![Build Status](https://api.travis-ci.com/marcbln/symfony-facades.svg?branch=main)](https://app.travis-ci.com/github/marcbln/symfony-facades)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/marcbln/symfony-facades/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/marcbln/symfony-facades/?branch=main)
 [![StyleCI](https://styleci.io/repos/418488513/shield?branch=main)](https://styleci.io/repos/418488513)
