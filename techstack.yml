@@ -1,11 +1,11 @@
 repo_name: marcbln/symfony-facades
-report_id: 5a0c9b81c89d1faae404b70ca2852fea
+report_id: 33cb29ca5f70c0995454cd053035253c
 repo_type: Public
-timestamp: '2023-11-09T18:11:02+00:00'
-requested_by: whyoo-os
+timestamp: '2023-12-14T09:53:39+00:00'
+requested_by: marcbln
 provider: github
 branch: main
-detected_tools_count: 5
+detected_tools_count: 12
 tools:
 - name: PHP
   description: A popular general-purpose scripting language that is especially suited
@@ -28,7 +28,7 @@ tools:
   image_url: https://img.stackshare.io/service/1197/logosf_positif_03_icon.png
   detection_source: composer.json
   last_updated_by: Marc Christenfeldt
-  last_updated_on: 2023-01-23 08:03:19.000000000 Z
+  last_updated_on: 2023-12-08 20:32:56.000000000 Z
 - name: Git
   description: Fast, scalable, distributed revision control system
   website_url: http://git-scm.com/
@@ -48,7 +48,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Testing Frameworks
   image_url: https://img.stackshare.io/service/1616/1_WsEnddd5Y4EgEHsT054kUQ.jpeg
-  detection_source_url: composer.json
+  detection_source_url: https://github.com/marcbln/symfony-facades/blob/main/composer.json
   detection_source: composer.json
   last_updated_by: Thierry Feuzeu
   last_updated_on: 2021-10-18 13:25:34.000000000 Z
@@ -64,3 +64,93 @@ tools:
   detection_source: ".travis.yml"
   last_updated_by: Thierry Feuzeu
   last_updated_on: 2021-10-24 09:54:41.000000000 Z
+- name: php-coveralls/php-coveralls
+  description: PHP client library for Coveralls API
+  package_url: https://packagist.org/php-coveralls/php-coveralls
+  version: '2.4'
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/packagist/image.png
+  detection_source_url: https://github.com/marcbln/symfony-facades/blob/main/composer.json
+  detection_source: composer.json
+  last_updated_by: Thierry Feuzeu
+  last_updated_on: 2021-10-24 09:54:41.000000000 Z
+- name: phpunit/phpcov
+  description: CLI frontend for php-code-coverage
+  package_url: https://packagist.org/phpunit/phpcov
+  version: '8.2'
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/packagist/image.png
+  detection_source_url: https://github.com/marcbln/symfony-facades/blob/main/composer.json
+  detection_source: composer.json
+  last_updated_by: Thierry Feuzeu
+  last_updated_on: 2021-10-24 09:54:41.000000000 Z
+- name: phpunit/phpunit
+  description: The PHP Unit Testing framework
+  package_url: https://packagist.org/phpunit/phpunit
+  version: '9.5'
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/packagist/image.png
+  detection_source_url: https://github.com/marcbln/symfony-facades/blob/main/composer.json
+  detection_source: composer.json
+  last_updated_by: Thierry Feuzeu
+  last_updated_on: 2021-10-24 09:54:41.000000000 Z
+- name: psr/container
+  description: Common Container Interface
+  package_url: https://packagist.org/psr/container
+  version: 1.0.0
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/packagist/image.png
+  detection_source_url: https://github.com/marcbln/symfony-facades/blob/main/composer.json
+  detection_source: composer.json
+  last_updated_by: Thierry Feuzeu
+  last_updated_on: 2021-10-18 13:25:34.000000000 Z
+- name: symfony/framework-bundle
+  description: Provides a tight integration between Symfony components and the Symfony
+    full-stack framework
+  package_url: https://packagist.org/symfony/framework-bundle
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/packagist/image.png
+  detection_source: composer.json
+  last_updated_by: Marc Christenfeldt
+  last_updated_on: 2023-12-08 20:32:56.000000000 Z
+- name: symfony/phpunit-bridge
+  description: Provides utilities for PHPUnit
+  package_url: https://packagist.org/symfony/phpunit-bridge
+  version: '4.4'
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/packagist/image.png
+  detection_source_url: https://github.com/marcbln/symfony-facades/blob/main/composer.json
+  detection_source: composer.json
+  last_updated_by: Marc Christenfeldt
+  last_updated_on: 2023-12-08 20:32:56.000000000 Z
+- name: symfony/test-pack
+  description: A pack for functional and end-to-end testing within a Symfony app
+  package_url: https://packagist.org/symfony/test-pack
+  version: '1.0'
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/packagist/image.png
+  detection_source_url: https://github.com/marcbln/symfony-facades/blob/main/composer.json
+  detection_source: composer.json
+  last_updated_by: Marc Christenfeldt
+  last_updated_on: 2023-12-08 20:32:56.000000000 Z
